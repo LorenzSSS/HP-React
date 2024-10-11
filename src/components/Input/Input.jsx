@@ -1,18 +1,20 @@
+import {Container} from '../Container/Container';
 import s from './Input.module.css'
 
 export function Input({value, onChange}) {
     return (
-        <div className = {s.Input}>
-            <p className = {s.name}>Name</p>
-            <input
-            className = {s.placeholder}
-            placeholder = 'Placeholder'
+        <Container>
+            <div className = {s.Input}>
+            <label name='Name'className = {s.nameLabel}>Name</label>
+            <input id='Name'
+            className = {s.nameInput}
+            placeholder = 'Hermione'
             value = {value}
             onChange = {onChange} 
             />
-            <div className = {s.rectangle}></div>
-        </div>
-    ) 
+            </div>
+        </Container>
+    )
 }
 
 export default Input;

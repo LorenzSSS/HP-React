@@ -1,24 +1,22 @@
 .Input {
     margin-top: 48px;
-    margin: 0 auto;
-};
+/*     margin: 0 auto; */
+    display: block;
+}
 
-.name {
+.nameLabel {
+    display: block;
     color: #818182;
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px; /* 175% */
-};
+}
 
-.placeholder {
+.nameInput {
+    padding: 9px 17px;
+    margin-top: 3px;
     width: 452px;
     height: 38px;
     flex-shrink: 0;
-};
-
-.rectangle {
-    width: 1440px;
-    height: 1px;
-    background: #DEE2E6;;
 }
